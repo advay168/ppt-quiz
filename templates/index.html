@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/index.css')}}">
+</head>
+
+<body>
+    <h1>Create a PPT quiz using this tool!</h1>
+    <table id="mainTable">
+        <thead>
+            <tr id="heading_row">
+                <th>
+                    Question
+                </th>
+                <th>
+                    Answer
+                </th>
+                <th>
+                    Options
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="generate">
+        <button onclick="generate()">Generate PowerPoint Presentation</button>
+    </div>
+    <div id="response"></div>
+
+    <script src="{{ url_for('static' , filename='js/index.js')}}"></script>
+</body>
+
+</html>

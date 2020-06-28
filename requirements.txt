@@ -1,0 +1,11 @@
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
+lxml==4.5.1
+MarkupSafe==1.1.1
+Pillow==7.1.2
+python-pptx==0.6.18
+Werkzeug==1.0.1
+XlsxWriter==1.2.9

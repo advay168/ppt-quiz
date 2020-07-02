@@ -30,7 +30,7 @@ def gen():
             if any([not x for x in Questions_and_answer["Options"]]):
                 return "<p>Empty data</p>"
         temp=str(time.time())+request.remote_addr
-        tag=f"<b>This link is valid for 1 hour</b><br><a href='/downloadfile?filename={temp}.pptx'> Click here to download the PPT</a>"
+        tag=f"<span id='link-warning'>This link is valid for 1 hour</span><br><a href='/downloadfile?filename={temp}.pptx'> Click here to download the PPT</a>"
         makePPTFromQs(Questions_and_answers,temp+".pptx")
         threading.Thread(target=remove_file,args=(temp+".pptx",)).start()
         return tag

@@ -129,4 +129,6 @@ add_row();
 
 main_table.addEventListener("keyup", onkeyup);
 
-document.addEventListener("load", e => add_row())
+document.addEventListener("load", e => add_row());
+
+document.querySelector("button").addEventListener("click", e => document.activeElement.blur())

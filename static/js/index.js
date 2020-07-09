@@ -13,12 +13,14 @@ function add_row() {
 
     var Question_cell = row.insertCell(-1);
     var q_textarea = document.createElement("textarea");
+    q_textarea.placeholder="Your question here";
     q_textarea.className = "Question";
     Questions.push(q_textarea);
     Question_cell.appendChild(q_textarea);
 
     var Answer_cell = row.insertCell(-1);
     var a_input = document.createElement("input");
+    a_input.placeholder="Answer to your question";
     a_input.className = "Answer";
     Answers.push(a_input);
     Answer_cell.appendChild(a_input);
@@ -26,6 +28,7 @@ function add_row() {
     var Options_cell = row.insertCell(-1);
     O_rows.push(Options_cell);
     var o_input = document.createElement("input");
+    o_input.placeholder="Option to your question";
     o_input.className = "Options";
     Options.push([o_input]);
     Options_cell.appendChild(o_input);
@@ -74,6 +77,7 @@ function onkeyup(e) {
         if (Option[Option.length - 1].value) {
             var option = document.createElement("input");
             option.className = "Options";
+            option.placeholder="Option to your question";
             Option.push(option);
             O_rows[i].appendChild(option);
         } else {

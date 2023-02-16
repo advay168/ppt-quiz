@@ -8,5 +8,5 @@ lxml==4.9.1
 MarkupSafe==2.0.1
 Pillow
 python-pptx==0.6.19
-Werkzeug==2.0.1
+Werkzeug==2.2.3
 XlsxWriter==3.0.1
